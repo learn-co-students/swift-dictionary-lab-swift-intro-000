@@ -14,7 +14,7 @@
  */
 // write your code here
 
-
+var statesCapital = ["new york": "Albany","Ohio": "Columbos","Florida": "Tallahassee","Georgia": "Atlanta","Kentucky": "Frankfort"]
 
 
 
@@ -36,7 +36,7 @@
  */
 // write your code here
 
-
+var capital = statesCapital["Florida"]
 
 
 
@@ -140,9 +140,9 @@ let state = "New York"
  */
 // write your code here
 
+var band = ["Nirvana": ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"], "The Beatles": ["John Lennon", "George Harrison"]]
 
-
-
+band["Nirvana"]?[2]
 
 
 
