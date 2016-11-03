@@ -14,7 +14,7 @@
  */
 // write your code here
 var stateCapital = ["New York":"Albany","Ohio":"Columbus","Florida":"Tallahassee","Georgia":"Atlanta","Kentucky":"Frankfort"]
-
+print(stateCapital)
 
 
 /*: question2
@@ -35,8 +35,10 @@ var capital = stateCapital["Florida"]
  */
 // write your code here
 print("The capital of Florida is \(capital!)")
-
-
+// OR
+if var cap = stateCapital["Florida"] {
+    print("The capital of Florida is \(cap)")
+}
 
 /*: question5
  ### 5. Create a variable called `anotherCapital` and assign to it the value of Pennsylvania's capital from the dictionary.
@@ -118,3 +120,6 @@ let bandName = "Pixies"
 if let bandMem = bandDict[bandName] {
     print("\(bandName) members: \(bandMem)")
 }
+
+
+//** repeating assignment ***//
