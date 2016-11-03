@@ -20,7 +20,7 @@ var stateCapital = ["New York":"Albany","Ohio":"Columbus","Florida":"Tallahassee
 /*: question2
  ### 2. What is the type of the dictionary you created in Question 1?
  */
-//Ans: Type of dict is String,String
+//Ans: Type of dict is String,[String]
 
 /*: question3
  ### 3. Create a variable called `capital` and assign to it Florida's capital from the dictionary.
