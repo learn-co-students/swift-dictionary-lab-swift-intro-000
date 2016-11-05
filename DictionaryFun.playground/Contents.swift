@@ -13,7 +13,8 @@
  ### 1. Given the following states, New York, Ohio, Florida, Georgia and Kentucky, create a dictionary which stores these states along with their capitals. The capitals of these states are as follows (in the correct order), Albany, Columbus, Tallahassee, Atlanta, and Frankfort.
  */
 // write your code here
-
+var dict = ["New York": "Albany", "Ohio": "Columbus", "Florida": "Tallahassee", "Georgia": "Atlanta", "Kentucky": "Frankfort"]
+print(dict)
 
 
 
@@ -36,8 +37,8 @@
  */
 // write your code here
 
-
-
+dict["Florida"] = nil
+var capital = dict["Florida"]
 
 
 
@@ -48,8 +49,12 @@
  */
 // write your code here
 
-
-
+print(capital)
+if let capital = capital {
+    print("The capital of Florida is \(capital)")
+} else {
+    print ("Florida has no capital")
+}
 
 
 
@@ -59,7 +64,7 @@
  ### 5. Create a variable called `anotherCapital` and assign to it the value of Pennsylvania's capital from the dictionary.
  */
 // write your code here
-
+var anotherCapital = dict["Pennsylvania"]
 
 
 
@@ -72,7 +77,11 @@
  */
 // write your code here
 
-
+if let anotherCapital = anotherCapital {
+    print ("I don't know Pennsylvania's capital")
+} else {
+    print(anotherCapital)
+}
 
 
 
@@ -84,7 +93,7 @@
  */
 // write your code here
 
-
+dict["Pennsylvania"] = "Harrisburg"
 
 
 
@@ -97,7 +106,12 @@
 // write your code here
 
 
-
+var alex = dict["Pennsylvania"]
+if let paCapital = alex {
+    print("Pennsylvania's capital is \(paCapital)")
+} else {
+    print("I don't have a capital for Pennsyvlvania")
+}
 
 
 
@@ -107,7 +121,7 @@
  ### 9. We don't really care about Pennsylvania's capital. Delete it from the dictionary. Print your dictionary to the console to ensure it's gone.
  */
 // write your code here
-
+dict["Pennsylvania"] = nil
 
 
 
@@ -121,6 +135,7 @@
 let state = "New York"
 // write your code here
 
+dict[state]
 
 
 
@@ -140,6 +155,16 @@ let state = "New York"
  */
 // write your code here
 
+var bands = ["Nirvana": ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"]]
+var members = bands["Nirvana"]
+
+if let members = members {
+    for member in members {
+        print(member)
+    }
+} else {
+    print("No members in the band")
+}
 
 
 
