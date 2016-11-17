@@ -15,7 +15,7 @@
 // write your code here
 
 
-
+var state_capitals = ["New York":"Albany", "Ohio":"Columbus", "Florida":"Tallahassee", "Georgia":"Atlanta", "Kentucky":"Frankfort"]
 
 
 
@@ -23,7 +23,7 @@
 /*: question2
  ### 2. What is the type of the dictionary you created in Question 1?
  */
-
+//[String:String]
 
 
 
@@ -37,7 +37,7 @@
 // write your code here
 
 
-
+var capital = state_capitals["Florida"]
 
 
 
@@ -47,21 +47,16 @@
  ### 4. Unwrap `capital` and print out the message "The capital of Florida is <Capital>" to the console.
  */
 // write your code here
-
-
-
-
-
-
-
+if let(capital_const) = state_capitals["Florida"]{
+    print("The capital of Florida is \(capital_const)")
+}
 
 /*: question5
  ### 5. Create a variable called `anotherCapital` and assign to it the value of Pennsylvania's capital from the dictionary.
  */
 // write your code here
 
-
-
+var anotherCapital = state_capitals["Pennsylvania"]
 
 
 
@@ -72,6 +67,11 @@
  */
 // write your code here
 
+let(anotherCapital_unwrapped) = anotherCapital
+
+if anotherCapital_unwrapped == nil{
+    print("I don't know Pennsyslvania's capital")
+}
 
 
 
@@ -85,8 +85,7 @@
 // write your code here
 
 
-
-
+state_capitals["Pennsylvania"] = "Harrisburg"
 
 
 
@@ -97,6 +96,9 @@
 // write your code here
 
 
+if let(state_capitals_Penn) = state_capitals["Pennsylvania"]{
+    print("Pennsylvania's capital is \(state_capitals_Penn)")
+    }
 
 
 
@@ -108,10 +110,9 @@
  */
 // write your code here
 
+state_capitals.removeValue(forKey: "Pennsylvania")
 
-
-
-
+print(state_capitals["Pennsylvania"])
 
 
 
@@ -119,12 +120,14 @@
  ### 10. You have been given the constant `state` with a state name. Use that constant to retrieve the state's capital from the dictionary. Print "The capital of <State> is <Capital>" to the console.
  */
 let state = "New York"
+let(state_cap_NY) = state_capitals[state]
 // write your code here
 
+print("The capital of \(state) is \(state_cap_NY)")
 
-
-
-
+if let(state_cap_NY) = state_capitals[state]{
+    print("\(state_cap_NY)")
+}
 
 
 
@@ -143,7 +146,11 @@ let state = "New York"
 
 
 
+var band_members = ["Nirvana":["Kurt Cobain", "Krist Novoselic", "Dave Grohl"], "The Beattles":["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"]]
 
+band_members["The Breeders"] = ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"]
+
+band_members["Pixies"] = ["Frank Black", "Joey Santiago", "Kim Deal", "David Lovering"]
 
 
 
@@ -154,7 +161,7 @@ let state = "New York"
  */
 
 
-
+//var band_members: [String : Array<String>]
 
 
 
@@ -166,8 +173,10 @@ let state = "New York"
 let bandName = "Pixies"
 // write your code here
 
-
-
+if let(bandmembers_Pixies) = band_members[bandName]{
+    let bandmembers_Pixies = bandmembers_Pixies
+    print("\(bandmembers_Pixies)")
+}
 
 
 
