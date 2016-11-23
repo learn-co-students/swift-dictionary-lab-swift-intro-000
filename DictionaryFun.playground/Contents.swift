@@ -14,16 +14,13 @@
  */
 // write your code here
 
-
-
-
-
+var statesAndCapitals = ["New York" : "Albany", "Ohio" : "Columbus", "Florida" : "Tallahassee", "Georgia" : "Atlanta", "Kentucky" : "Frankfort"]
 
 
 /*: question2
  ### 2. What is the type of the dictionary you created in Question 1?
  */
-
+//String, String
 
 
 
@@ -36,9 +33,7 @@
  */
 // write your code here
 
-
-
-
+var capital = statesAndCapitals["Florida"]
 
 
 
@@ -47,6 +42,11 @@
  ### 4. Unwrap `capital` and print out the message "The capital of Florida is <Capital>" to the console.
  */
 // write your code here
+
+
+if let unwrappedCapital = capital {
+    print("The capital of Florida is \(unwrappedCapital)")
+}
 
 
 
@@ -58,23 +58,19 @@
 /*: question5
  ### 5. Create a variable called `anotherCapital` and assign to it the value of Pennsylvania's capital from the dictionary.
  */
-// write your code here
+var anotherCapital: String?
 
+anotherCapital = statesAndCapitals["Pennsylvania"]
 
-
-
-
-
-
-
+if let unwrappedAnotherCapital = anotherCapital {
+    print("Pennsylvania, as well as being a funny word to type, has a capital called \(unwrappedAnotherCapital)")
+} else {
+    print("I don't know the capital of Pennsylvania")
+}
 /*: question6
  ### 6. Unwrap `anotherCapital` and print out the message "I don't know Pennsylvania's capital" to the console.
  */
-// write your code here
-
-
-
-
+// see above
 
 
 
@@ -84,10 +80,7 @@
  */
 // write your code here
 
-
-
-
-
+statesAndCapitals["Pennsylvania"] = "Harrisburg"
 
 
 
@@ -96,7 +89,9 @@
  */
 // write your code here
 
-
+if let choosenCapital = statesAndCapitals["Pennsylvania"] {
+    print("Pennsylvania's capital is \(choosenCapital)")
+}
 
 
 
@@ -109,9 +104,18 @@
 // write your code here
 
 
+for (state, capitalCity) in statesAndCapitals
+{
+    print("\(state) - \(capitalCity), ")
+}
+
+statesAndCapitals["Pennsylvania"] = nil
 
 
-
+for (state, capitalCity) in statesAndCapitals
+{
+    print("\(state) - \(capitalCity), ")
+}
 
 
 
@@ -122,7 +126,9 @@ let state = "New York"
 // write your code here
 
 
-
+if let choosenCapital = statesAndCapitals[state] {
+    print("The capital of \(state) is \(choosenCapital)")
+}
 
 
 
@@ -140,8 +146,21 @@ let state = "New York"
  */
 // write your code here
 
+var bandList = [String : [String]]()
 
 
+
+bandList = [
+    "Nirvana" : ["Kurt Cobain", "Kirst Novoselic", "Dave Grohl"],
+    "The Beatles" : ["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"],
+    "The Breeders" : ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"],
+    "Pixies" : ["Frank Black", "Joey Santiago", "Kim Deal", "David Lovering"]
+]
+
+for (bandName, bandMembers) in bandList
+{
+    print("\(bandName), \(bandMembers.count) members")
+}
 
 
 
@@ -166,7 +185,14 @@ let state = "New York"
 let bandName = "Pixies"
 // write your code here
 
-
+if let choosenBand = bandList[bandName] {
+    print("\(bandName) Members Are:")
+    
+    for member in choosenBand
+    {
+        print(member)
+    }
+}
 
 
 
