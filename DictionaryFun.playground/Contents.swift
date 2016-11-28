@@ -14,9 +14,7 @@
  */
 // write your code here
 
-
-
-
+var States_dic = ["New York": "Albany", "Ohio":"Columbus", "Florida":"Tallahassee", "Georgia":"Atlanta","Kentucky":"Frankfort"]
 
 
 
@@ -24,11 +22,7 @@
  ### 2. What is the type of the dictionary you created in Question 1?
  */
 
-
-
-
-
-
+// dictionary of string keys and string values [string:string]
 
 
 /*: question3
@@ -37,7 +31,8 @@
 // write your code here
 
 
-
+var capital :String?
+ capital = States_dic["Florida"]
 
 
 
@@ -49,9 +44,9 @@
 // write your code here
 
 
-
-
-
+if let capital = capital {
+    print("The capital of Florida is \(capital)")
+}
 
 
 
@@ -60,7 +55,7 @@
  */
 // write your code here
 
-
+var anotherCapital = States_dic["Pennsylvania"]
 
 
 
@@ -72,6 +67,12 @@
  */
 // write your code here
 
+if let anotherCapital = anotherCapital {
+    
+}
+else {
+    print("I don't know Pennsylvania's capital")
+}
 
 
 
@@ -85,7 +86,7 @@
 // write your code here
 
 
-
+States_dic["Pennsylvania"] = "Harrisburg"
 
 
 
@@ -96,7 +97,11 @@
  */
 // write your code here
 
-
+var capital_p :String?
+capital_p = States_dic["Pennsylvania"]
+if let capital_p = capital_p {
+    print("Pennsylvania's capital is \(capital_p)")
+}
 
 
 
@@ -108,7 +113,8 @@
  */
 // write your code here
 
-
+States_dic["Pennsylvania"] = nil
+print("the dic now  = \(States_dic)")
 
 
 
@@ -120,7 +126,10 @@
  */
 let state = "New York"
 // write your code here
-
+var cap = States_dic[state]
+if let cap = cap {
+  print("The capital of \(state) is \(cap)")
+}
 
 
 
@@ -142,7 +151,7 @@ let state = "New York"
 
 
 
-
+var new_dic = ["Nirvana":["Kurt Cobain", "Krist Novoselic", "Dave Grohl"],"The Beatles":["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"]]
 
 
 
@@ -156,7 +165,7 @@ let state = "New York"
 
 
 
-
+// the type is key strings and array values
 
 
 
