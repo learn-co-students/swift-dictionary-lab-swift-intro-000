@@ -47,7 +47,7 @@ class Challenges {
         if let penn = pennsylvaniaCapital() {
             return "The capital of Pennsylvania is \(penn)."
         } else {
-            return "Unable to find the captial of Pennsylvania."
+            return "Unable to find the capital of Pennsylvania."
         }
     }
     
@@ -64,7 +64,17 @@ class Challenges {
     }
     
     func createBand() -> [String : [String]] {
+        let nirvana = ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"]
+        let theBeatles = ["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"]
+        let theBreeders = ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"]
         
+        var bands = [
+            "Nirvana" : nirvana,
+            "The Beatles" : theBeatles,
+            "The Breeders" : theBreeders
+        ]
+    
+        return bands
     }
     
 }
