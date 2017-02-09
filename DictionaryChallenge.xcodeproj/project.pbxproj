@@ -157,7 +157,6 @@
 				TargetAttributes = {
 					7D6E93D21E0C36ED0051858D = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 3E2QGNXM7N;
 						ProvisioningStyle = Automatic;
 					};
 					7D6E93E61E0C36ED0051858D = {
@@ -351,7 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DictionaryChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JimCampagno.Swift.DictionaryChallenge;
@@ -364,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3E2QGNXM7N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DictionaryChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JimCampagno.Swift.DictionaryChallenge;
@@ -422,6 +421,7 @@
 				7D6E93F21E0C36ED0051858D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D6E93F31E0C36ED0051858D /* Build configuration list for PBXNativeTarget "DictionaryChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +430,7 @@
 				7D6E93F51E0C36ED0051858D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
