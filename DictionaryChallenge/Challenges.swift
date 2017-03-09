@@ -23,7 +23,7 @@ class Challenges {
         return statesAndCapitals
     }
     
-    func floridaCaptial() -> String? {
+    func floridaCapital() -> String? {
         
         let statesAndCapitals = createStatesAndCapitals()
         
@@ -31,7 +31,7 @@ class Challenges {
     }
     
     func createFloridaCapitalSentence() -> String {
-        if let floridaCapital = floridaCaptial() {
+        if let floridaCapital = floridaCapital() {
             return "The capital of Florida is \(floridaCapital)."
         }
         return "unable to find the capital of Florida."
@@ -43,7 +43,7 @@ class Challenges {
         return pennsylvaniaCapital
     }
     
-    func createpennsylvaniaSentence() -> String {
+    func createPennsylvaniaSentence() -> String {
         if let pennsylvaniaCapital = pennsylvaniaCapital() {
             return "The capital of Pennsylvania is \(pennsylvaniaCapital)."
         } else {
@@ -51,6 +51,29 @@ class Challenges {
         }
     }
     
-
+    func createAllStatesAndCapitals() -> [String: String] {
+        var statesAndCapitals = createStatesAndCapitals()
+        statesAndCapitals.updateValue("Harrisburg", forKey: "Pennsylvania")
+        return statesAndCapitals
+    }
     
+    func removePennsylvania() -> [String: String] {
+        var statesAndCapitals = createAllStatesAndCapitals()
+        statesAndCapitals.removeValue(forKey: "Pennsylvania")
+        return statesAndCapitals
+    }
+    
+    func createBand() -> [String: [String]] {
+        let nirvanaBandMembers = ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"]
+        let beatlesBandMembers = ["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"]
+        let breedersBandMembers =  ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"]
+        
+        let bands = [
+            "Nirvana": nirvanaBandMembers,
+            "The Beatles": beatlesBandMembers,
+            "The Breeders": breedersBandMembers
+        ]
+        
+        return bands
+    }
 }
