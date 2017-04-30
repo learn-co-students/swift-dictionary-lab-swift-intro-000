@@ -52,7 +52,7 @@ class DictionaryChallengeTests: XCTestCase {
     func testPennsylvaniaCapital() {
         XCTAssertNil(testChallenges.pennsylvaniaCapital(), Problem.four.error)
     }
-    
+
     // 5
     func testCreatepennsylvaniaSentence() {
         let expectedResult = "Unable to find the capital of Pennsylvania."
