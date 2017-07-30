@@ -34,6 +34,7 @@ class DictionaryChallengeTests: XCTestCase {
         XCTAssertEqual(testChallenges.createStatesAndCapitals(), expectedResult, Problem.one.error)
     }
     
+    
     // 2
     func testFloridaCapital() {
         let expectedResult = "Tallahassee"
