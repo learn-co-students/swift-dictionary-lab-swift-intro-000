@@ -39,6 +39,7 @@ class DictionaryChallengeTests: XCTestCase {
         let expectedResult = "Tallahassee"
         
         XCTAssertEqual(testChallenges.floridaCapital(), expectedResult, Problem.two.error)
+        
     }
     
     // 3
@@ -73,7 +74,7 @@ class DictionaryChallengeTests: XCTestCase {
     func testRemovePennsylvania() {
         let all = testChallenges.removePennsylvania()
         let result = all["Pennsylvania"]
-        
+
         XCTAssertNil(result, Problem.seven.error)
     }
     
