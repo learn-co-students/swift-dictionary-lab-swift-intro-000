@@ -11,10 +11,64 @@ import Foundation
 
 class Challenges {
     
+    func createStatesAndCapitals() -> [String : String]{
+        let statesAndCapitals = [
+            "New York" : "Albany",
+            "Ohio" : "Columbus",
+            "Florida" : "Tallahassee",
+            "Georgia" : "Atlanta",
+            "Kentucky" : "Frankfort"
+        ]
+        return statesAndCapitals
+    }
     
+    func floridaCapital() -> String? {
+        let dictionary = createStatesAndCapitals()
+        return dictionary["Florida"]
+    }
     
-    // Answer the problems here.
+    func createFloridaCapitalSentence() -> String {
+        if let capital = floridaCapital() {
+            return "The capital of Florida is \(capital)."
+        } else {
+            return "Unable to find the capital of Florida."
+        }
+    }
     
+    func pennsylvaniaCapital() -> String? {
+        let dictionary = createStatesAndCapitals()
+        return dictionary["Pennsylvania"]
+    }
     
+    func createPennsylvaniaSentence() -> String{
+        if let capital = pennsylvaniaCapital() {
+            return "The capital of Pennsylvania is \(capital)."
+        } else {
+            return "Unable to find the capital of Pennsylvania."
+        }
+    }
     
+    func createAllStatesAndCapitals() -> [String : String] {
+        var statesAndCapitals = createStatesAndCapitals()
+        statesAndCapitals = ["Pennsylvania" : "Harrisburg"]
+        return statesAndCapitals
+    }
+    
+    func removePennsylvania() -> [String : String] {
+        var statesAndCapitals = createAllStatesAndCapitals()
+        statesAndCapitals["Pennsylvania"] = nil
+        return statesAndCapitals
+    }
+    
+    func createBand() -> [String : [String]] {
+        let nirvana = ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"]
+        let theBeatles = ["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"]
+        let theBreeders = ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"]
+       
+        return [
+            "Nirvana" : nirvana,
+            "The Beatles" : theBeatles,
+            "The Breeders" : theBreeders
+        ]
+    }
 }
