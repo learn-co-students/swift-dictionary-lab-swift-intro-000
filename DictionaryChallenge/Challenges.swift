@@ -43,7 +43,7 @@ class Challenges {
         if let capital = capital {
             return "The capital of Pennsylvania is \(capital)."
         } else {
-            return "Unable to find the capital of Pennsylvania"
+            return "Unable to find the capital of Pennsylvania."
         }
     }
     
