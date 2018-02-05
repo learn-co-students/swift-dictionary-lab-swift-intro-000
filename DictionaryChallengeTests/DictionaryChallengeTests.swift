@@ -55,7 +55,7 @@ class DictionaryChallengeTests: XCTestCase {
     
     // 5
     func testCreatepennsylvaniaSentence() {
-        let expectedResult = "Unable to find the capital of Pennsylvania."
+        let expectedResult = "Unable to find the capital of Pennsylvania"
         
         XCTAssertEqual(testChallenges.createPennsylvaniaSentence(), expectedResult, Problem.five.error)
     }
