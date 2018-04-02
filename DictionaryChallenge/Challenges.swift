@@ -22,6 +22,7 @@ class Challenges {
         ]
         
         return capitals
+        
     }
     
     func floridaCapital () -> String? {
@@ -112,5 +113,4 @@ class Challenges {
         return bands
         
     }
-    
 }
