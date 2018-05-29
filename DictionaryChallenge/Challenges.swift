@@ -83,7 +83,7 @@ class Challenges {
     }
     
     //this is question 8
-    func creatBand() -> [String: [String]] {
+    func createBand() -> [String: [String]] {
         let bandNirvana = ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"]
         let bandBeatles = ["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"]
         let bandBreeders = ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"]
