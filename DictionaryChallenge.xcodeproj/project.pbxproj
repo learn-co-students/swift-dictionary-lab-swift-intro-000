@@ -422,6 +422,7 @@
 				7D6E93F21E0C36ED0051858D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D6E93F31E0C36ED0051858D /* Build configuration list for PBXNativeTarget "DictionaryChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +431,7 @@
 				7D6E93F51E0C36ED0051858D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
